@@ -1,0 +1,286 @@
+/* Fonts 
+font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+*/
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.main-banner{
+  background-image: url('./images/desktop/image-hero.jpg');
+  height: 90vh;
+}
+
+/* Navbar  start*/
+.navbar{
+  display: flex;
+  justify-content: space-around;
+ 
+}
+.navbar-cont{
+  display: flex;
+  margin-top: 2%;
+}
+.navbar-brand{
+  color: white;
+  font-size: 32px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight:700;
+}
+
+.navbar-nav{
+  flex: 1 1 ;
+  justify-content: end;
+}
+
+
+.navbar li a{
+  color: white ;
+  font-size: 13px;
+  margin: 6px;
+  font-family:  'Josefin Sans', sans-serif;
+  font-weight: 500;
+}
+
+
+.banner-text-cont{
+  display: inline-flex;
+  justify-content:start;
+  margin-left: 8.5%;
+  margin-top: 9%;
+  border: 2px solid white;
+  width: 50%;
+}
+.banner-text-cont p{
+ text-transform: uppercase;
+ color: white;
+ line-height: 1;
+ padding-left: 20px;
+ padding-bottom: 20px;
+ padding-top: 40px;
+ letter-spacing: 5px;
+ font-size: 60px;
+ font-family: 'Josefin Sans', sans-serif;
+ font-weight: 300;
+}
+
+/* Navbar end */
+
+/* Interactive Section  start*/
+.interactive-container{
+  margin-top: 10%;
+  position: relative;
+}
+.interactive-container img{
+  width: 40.5rem;
+  /* position: relative; */
+}
+
+.interactive-text-container{
+  background-color: white;
+  bottom: 0;
+  position: absolute;
+  left: 32.5rem;
+  height: 17.6rem;
+  width: 32rem;
+}
+.heading{
+  margin-left: 17%;
+  margin-top: 16%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1;
+}
+.paragraph{
+  margin-top: 6%;
+  margin-left: 17%;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 55%);
+}
+/* Interactive Section end */
+
+/* Our Creation Section  start*/
+.our-creations-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 11.5%;
+}
+.creation{
+  font-size: 43px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+}
+
+.creation-button button{
+  border: 2px solid hsl(0, 0%, 55%);
+  width: 8.6rem;
+  height: 2.3rem;
+  background-color: white;
+}
+.see-all{
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+/* Our Creation Section end */
+
+/* Card Section  start*/
+.card-container{
+margin-top: 4.5%;
+margin-bottom: 12%;
+}
+
+.image-text-container{
+  position: relative;
+}
+.image-caption{
+position: absolute;
+color: rgb(255, 255, 255);
+text-transform: uppercase;
+bottom: 2rem;
+left: 2.5rem;
+/* top: 0; */
+font-size: 30px;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 200;
+}
+/* Card Section end */
+
+/* footer section start*/
+footer{
+  background-color: black;
+  /* border: 1px solid red; */
+  height: 9rem;
+}
+
+
+.loopstudios-social-container{
+  padding-top: 2rem;
+}
+.social-container{
+  display: flex;
+  justify-content: end;
+}
+.social-container img{
+  padding: 3px;
+}
+.loopstudios{
+  color: white;
+  font-size: 26px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight:500;
+}
+.navigation-container{
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: flex-start;
+  align-content: start;
+}
+.navigation-container li {
+  display:inline-flex;
+  list-style: none;
+  padding-right: 20px;
+  /* border: 1px solid red; */
+}
+.navigation-container li a{
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-family:  'Josefin Sans', sans-serif;
+  font-weight: 500;
+}
+.all-right{
+  color: hsl(0, 0%, 41%);
+  font-size: 14px;
+  font-family: 'Alata', sans-serif;
+  font-weight: 500;
+}
+/* footer section end */
+
+
+@media screen and (max-width:375px) {
+ 
+  .navbar-toggler{
+    color: white;
+    border: none;
+  }
+  .navbar-toggler-icon{
+    background-color:transparent;
+    color: white;
+  }
+ .navbar-cont button {
+  color: white;
+ }
+  .main-banner{
+    background-image: url('./images/mobile/image-hero.jpg');
+    height:100vh;
+    background-size:contain;
+    
+  }
+
+  .banner-text-cont{
+    display: inline-block;
+    justify-content:start;
+    border: 2px solid white;
+    width: fit-content;
+    height: 30vh;
+    margin-top: 40%;
+  }
+  .banner-text-cont p{
+   text-transform: uppercase;
+   color: white;
+  
+   font-size: 30px;
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: 300;
+  }
+  
+   /* Interactive Section  start*/
+.interactive-container{
+  margin-top: 25%;
+  justify-content: center;
+  
+}
+.interactive-container img{
+  width: 20.5rem;
+
+  
+}
+
+.interactive-text-container{
+  background-color: white;
+  /* border: 1px solid red; */
+  height: 17.6rem;
+  width: 32rem;
+}
+.heading{
+  margin-left: 17%;
+  margin-top: 16%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1;
+}
+.paragraph{
+  margin-top: 6%;
+  margin-left: 17%;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 55%);
+}
+/* Interactive Section end */
+  
+}
